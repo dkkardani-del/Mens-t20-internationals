@@ -1,0 +1,26 @@
+# Requirements for Men's T20I Cricket Analytics dataset scripts
+# Python standard library only — no third-party packages required.
+#
+# Standard-library modules used:
+# csv, os, collections.Counter, math
+#
+# Recommended: Python 3.10 or newer
+#
+# Scripts:
+# audit_dataset.py    - audits missing values, duplicate rows, matches, teams and venues
+# inspect_dataset.py  - inspects CSV columns, sample rows and row count
+# prepare_dataset.py  - selects complete matches to create a smaller processed CSV
+# validate_dataset.py - validates processed CSV structure and match IDs
+#
+# Run from Command Prompt / PowerShell:
+#   python audit_dataset.py
+#   python inspect_dataset.py
+#   python prepare_dataset.py
+#   python validate_dataset.py
+#
+# No pip install is needed because all imported modules are included with Python.
+#
+# Notes:
+# - prepare_dataset.py asks for the original CSV path and output CSV path.
+# - validate_dataset.py has a hard-coded processed CSV path. Update it to your own
+#   file location before running it on another computer.
